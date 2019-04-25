@@ -1,5 +1,4 @@
 
-
 public class Column {
 	private int radius;
 	private int height;
