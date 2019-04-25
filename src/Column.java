@@ -1,15 +1,15 @@
 
 public class Column {
-	private int height;
 	private int radius;
+	private int height;
 	
 	public Column() {
-		this.height = -1;
 		this.radius = -1;
+		this.height = -1;
 	}
-	public Column(int height, int radius) {
-		this.height = height;
+	public Column(int radius, int height) {
 		this.radius = radius;
+		this.height = height;
 	}
 	public int getHeight() {
 		return height;
@@ -25,8 +25,8 @@ public class Column {
 	}
 	
 	public int compareTo(Column other) {
-		if(this.height > other.height) return 1;
-		else if(this.height < other.height) return -1;
+		if(this.height < other.height) return 1;
+		else if(this.height > other.height) return -1;
 		else return 0;
 	}
 	
